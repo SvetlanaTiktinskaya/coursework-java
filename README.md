@@ -1,2 +1,2 @@
-# coursework-java-mvn
-Maven project import demo
+# coursework-java
+Example from coursework-java
