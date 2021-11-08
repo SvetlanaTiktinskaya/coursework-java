@@ -1,14 +1,14 @@
 CREATE DATABASE IF NOT EXISTS cars_db DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
 USE cars_db;
-​
+
 CREATE TABLE brand (
-        idBrand INT NOT NULL AUTO_INCREMENT,
+		idBrand INT NOT NULL AUTO_INCREMENT,
         name VARCHAR(70) NOT NULL,
         foundedYear SMALLINT(4),
         headquarter VARCHAR(200),
         PRIMARY KEY (idBrand)
 );
-​
+
 CREATE TABLE  model (
         idModel INT NOT NULL AUTO_INCREMENT,
         idBrand INT NOT NULL,
@@ -38,7 +38,7 @@ INSERT INTO brand (name,foundedYear,headquarter)
 VALUES ("Škoda Auto",1895,"Mladá Boleslav, Czech Republic");
 INSERT INTO brand (name,foundedYear,headquarter)
 VALUES ("Subaru",1953,"Ebisu, Tokyo, Japan");
-​
+
 INSERT INTO model (idBrand,modelName,generation, productionYear, doors, seats, maximumSpeed)
 VALUES (1,"Passat","Passat Alltrack (B8)", 2015 ,5 ,5 ,220);
 INSERT INTO model (idBrand,modelName,generation, productionYear, doors, seats, maximumSpeed)
