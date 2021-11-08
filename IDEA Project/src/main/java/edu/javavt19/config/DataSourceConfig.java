@@ -23,5 +23,5 @@ public class DataSourceConfig {
         dataSource.setPassword(environment.getRequiredProperty("jdbc.password"));
         return dataSource;
     }
-    
+
 }
